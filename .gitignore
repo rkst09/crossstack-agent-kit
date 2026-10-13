@@ -1,0 +1,26 @@
+# Node / frontend
+node_modules/
+dist/
+coverage/
+
+# .NET
+**/bin/
+**/obj/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local evaluation outputs; commit only intentionally sanitized artifacts
+*.trace.json
+*.session.json

@@ -1,0 +1,37 @@
+name: Bug report
+description: Report an incorrect skill instruction, installer issue, or reproducible sample failure.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Skill instructions
+        - Installer
+        - Repository validator
+        - Sample application
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and reproduction steps
+      description: Use synthetic details. Do not include secrets, customer data, tenant IDs, or private URLs.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Relevant tool versions
+      placeholder: VS Code, Copilot, .NET SDK, Node.js, OS
+    validations:
+      required: false
